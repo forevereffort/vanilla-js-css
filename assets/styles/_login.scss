@@ -21,6 +21,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  padding: 80px 40px;
   position: relative;
   width: 65%;
 }
@@ -194,6 +195,7 @@
   background-color: $color-blue;
   display: flex;
   justify-content: center;
+  padding: 80px 40px;
   width: 35%;
 }
 
@@ -291,4 +293,28 @@
 
 .hide {
   display: none;
+}
+
+@media (max-width : 1400px) {
+  .login-form-col {
+    width: 50%;
+  }
+
+  .login-des-col {
+    width: 50%;
+  }
+}
+
+@media (max-width : 1000px) {
+  .login-row {
+    display: block;
+  }
+
+  .login-form-col {
+    width: 100%;
+  }
+
+  .login-des-col {
+    width: 100%;
+  }
 }
