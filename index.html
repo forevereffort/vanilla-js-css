@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frontend Test</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="dist/assets/main.css">
+</head>
+<body>
+	<section class="login-section">
+		<div class="login-container">
+			<div class="login-row">
+				<div class="login-form-col">
+					<div class="login-form-step">
+						<div class="login-form-step-label">Step 1 of 3</div>
+						<div class="login-form-step-dots">
+							<span class="active"></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="login-form-wrapper">
+						<h1>Let’s set up your account</h1>
+						<div class="login-form-top-des">
+							<p>Already have an account? <a href="#">Sign in</a></p>
+						</div>
+						<form action="" method="post" id="login-form">
+							<div class="login-form-row">
+								<div class="login-form-input">
+									<input id="username" type="text" placeholder=" " data-validation="text"/>
+									<label for="username" >Your name</label>
+								</div>
+								<div class="login-form-error"></div>
+							</div>
+							<div class="login-form-row">
+								<div class="login-form-input">
+									<input id="email" type="text" placeholder=" " data-validation="email"/>
+									<label for="email" >Email address</label>
+								</div>
+								<div class="login-form-error"></div>
+							</div>
+							<div class="login-form-row">
+								<div class="login-form-select">
+									<select id="user_type">
+										<option value="0">I would describe my user type as</option>
+										<option value="1">Developer</option>
+									</select>
+								</div>
+								<div class="login-form-error"></div>
+							</div>
+							<div class="login-form-row">
+								<div class="login-form-input">
+									<input id="password" type="password" placeholder=" " data-validation="password"/>
+									<label for="password">Password</label>
+									<div id="password-show" data-show="no"></div>
+								</div>
+								<div class="login-form-helper">Minimum 8 characters</div>
+							</div>
+							<div class="login-form-submit-row">
+								<input type="submit" value="Next" />
+							</div>
+						</form>
+						<div class="login-form-bottom-des">
+							<p>By clicking the “Next” button, you agree to creating a free account, and to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="login-des-col">
+					<div class="login-des">
+						<h2>Dummy Heading</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="dist/assets/main.js"></script>
+</body>
+</html>
